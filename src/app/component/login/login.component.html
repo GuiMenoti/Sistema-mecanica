@@ -1,0 +1,39 @@
+<div class="container-principal">
+    <div class="container">
+        <div class="coluna1">
+            <img class="img-login" src="../../../assets/pexels-maltelu-1397751.jpg" alt="">
+        </div>
+        <div class="coluna2">
+            <div class="apresentacao__experiencia__subtitulo">
+                <div>
+                    <img src="../../../assets/logo-fluxo.png" alt="">
+                </div>
+             
+                <div class="inputs">
+                    <div class="inputs1">
+                        <label>E-mail</label>
+                        <input  type="email" name="email" [(ngModel)]="email">
+                    </div>
+                    <div class="inputs2">
+                        <label>Senha</label>
+                        <input type="password" name="password" [(ngModel)]="password">
+                        <a  class="senha-recupera" href=""  for="">Esqueci minha senha!</a>
+                    </div>
+                </div>
+         
+
+            <div class="btn-login">
+                <button type="button" (click)="login()" class="btn">Entrar</button>
+            </div>
+
+            <div style="padding-top: 30px;">
+                <div style="padding-top: 30px;">
+                    <p style="text-decoration: none; color: white;">
+                      Ainda não tem uma conta? 
+                      <a href="/register" style="color: purple;">Registrar</a>
+                    </p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

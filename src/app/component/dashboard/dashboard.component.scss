@@ -1,0 +1,237 @@
+
+
+//  .app-container {
+//     height: 100%;
+//     margin: 0;
+//     font-family: Arial, sans-serif;
+//     background: linear-gradient(#272727, #2E043D);
+//     color: #fff;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// // .app-container {
+// //     width: 80%;
+// //     max-width: 1200px;
+// //     padding: 20px;
+// //     display: flex;
+// //     flex-direction: column;
+// //     justify-content: center;
+// // }
+
+ header {
+    display: flex;
+   justify-content: space-between;
+     align-items: center;
+     margin-bottom: 20px;
+     width: 100%;
+     background-color: #372E46;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+ }
+
+ header h1 {
+     margin: 0; 
+    color: #ffffff;
+    }
+
+ header nav a {
+     color: #ffffff;
+    text-decoration: none;
+     margin-left: 15px;
+ }
+
+ header nav a:hover {
+     text-decoration: underline;
+ }
+
+// main {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+// }
+
+// .section {
+//     background: rgba(255, 255, 255, 0.1);
+//     padding: 20px;
+//     border-radius: 10px;
+//     margin-bottom: 20px;
+// }
+
+// .automotive-aesthetics h2 {
+//     background-color: #800080;
+//     padding: 10px;
+//     border-radius: 5px;
+//     margin-bottom: 20px;
+// }
+
+// .item {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 10px 0;
+// }
+
+// .item input {
+//     margin-right: 10px;
+// }
+
+// .subtotal, .total {
+//     display: flex;
+//     justify-content: flex-end;
+//     font-size: 1.2em;
+// }
+
+// .total {
+//     align-items: center;
+// }
+
+// .total button {
+//     margin-left: 20px;
+//     padding: 10px 20px;
+//     background: #cc66ff;
+//     border: none;
+//     color: #fff;
+//     border-radius: 5px;
+//     cursor: pointer;
+// }
+
+// .total button:hover {
+//     background: #b359e6;
+// }
+
+// .grid {
+//     display: grid;
+//     grid-template-columns: repeat(3, 1fr);
+//     gap: 20px;
+// }
+
+// .placeholder {
+//     background: rgba(255, 255, 255, 0.1);
+//     height: 100px;
+//     border-radius: 10px;
+// }
+
+
+
+.titulo {
+    position: absolute;
+  
+    background-color: #8e44ad; /* Cor do título */
+    color: white;
+    padding: 5px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.conteudo {
+    position: absolute;
+left: 0;
+    width: 100%;
+  bottom: 0;
+    color: rgb(0, 0, 0); /* Cor do conteúdo */
+   
+    background-color: white;
+}
+
+.containe-todo {
+    background: linear-gradient(#272727, #2E043D);
+    width: 100vw;
+    height: 100vh;
+   }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  
+    padding: 10px;
+  
+}
+
+.quadrado {
+    background-color: #CAC0CE;
+    width: 100%;
+    position: relative;
+}
+
+.quadrado1 {
+    height:350px; /* Altura do quadrado 1 */
+}
+
+.quadrado2 {
+    height:350px; /* Altura do quadrado 2 */
+}
+
+.quadrado3 {
+    height:350px; /* Altura do quadrado 3 */
+}
+
+.quadrado4 {
+    height:350px; /* Altura do quadrado 4 */
+}
+
+.quadrado5 {
+    height:350px; /* Altura do quadrado 5 */
+}
+
+.quadrado6 {
+    height:350px; /* Altura do quadrado 6 */
+}
+
+.quadrado7 {
+    height:350px; /* Altura do quadrado 7 */
+}
+
+.quadrado8 {
+    height:130px; /* Altura do quadrado 7 */
+   background-color: #4d4d4d;
+   border-radius: 30px;
+}
+
+.label {
+    display: flex;
+    align-items: center; /* Ajuste o alinhamento vertical dos itens */
+    justify-content: space-between; /* Ajuste o alinhamento horizontal dos itens */
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+}
+input[type="checkbox"] {
+    margin-right: 20px;
+   
+}
+.checkbox-container input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    background-color: purple; /* Cor roxa */
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-container input[type="checkbox"]::before {
+    
+    background: purple; /* Cor roxa */
+    
+}
+
+
+.checkbox-container {
+    color: white;
+    padding: 9px;
+    margin: 0;
+    padding-top: 40px;
+    
+}
+
+.checkbox-titulo {
+    margin-right: 10px;
+}
+
+.checkbox-valor {
+    margin-left: 10px;
+}

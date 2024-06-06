@@ -1,0 +1,434 @@
+<!-- <div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                               <h4 class="text-dark text-muted">Register</h4>
+                            </div>
+
+                     
+                            <button type="button" class="btn btn-info" (click)="register()">Register</button>
+                       
+                          </form>
+                    </div>
+
+                    <table>
+                        <thead>
+                          <tr>
+                            <th>Email</th>
+                            <th>Opções</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let user of users">
+                            
+                            <td>{{ user.email }}</td>
+                            <td><button (click)="deleteUser(user.uid)">Excluir</button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+  <div class="containe-todo">
+    <header>
+        <h1>FLUXO TUNING</h1>
+        <nav>
+            <a href="#">Sem parceria</a>
+            <a href="#">Parceria ilegal</a>
+            <a href="#">Parceria legal</a>
+            <a href="#">Admin</a>
+            <a style="cursor: pointer;" (click)="register()">Sair</a>
+        </nav>
+    </header>
+
+   
+    <div class="grid-container">
+
+      <div class="quadrado quadrado1">
+          <div class="titulo">Acessórios Externos</div>
+          <div class="checkbox-container">
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">AEROFOLIO</span>
+                <span class="checkbox-valor">100.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">PARACHOQUE / D</span>
+                <span class="checkbox-valor">40.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">PARACHOQUE / T</span>
+                <span class="checkbox-valor">45.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">SAIAS</span>
+                <span class="checkbox-valor">40.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">RETROVISOR</span>
+                <span class="checkbox-valor">40.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">TETO</span>
+                <span class="checkbox-valor">40.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">GRELHA</span>
+                <span class="checkbox-valor">40.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">BUZINA</span>
+                <span class="checkbox-valor">10.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">PARALAMAS</span>
+                <span class="checkbox-valor">40.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">CAPO</span>
+                <span class="checkbox-valor">40.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">ESCAPAMENTO</span>
+                <span class="checkbox-valor">45.000</span>
+            </div>
+            <div class="label">
+                <input type="checkbox"> 
+                <span class="checkbox-titulo">GAIOLA</span>
+                <span class="checkbox-valor">40.000</span>
+            </div>
+        </div>
+          <div class="conteudo">Sub-total:</div>
+      </div>
+
+      <div class="quadrado quadrado2">
+        <div class="quadrado quadrado2">
+            <div class="titulo">Acessórios Externos</div>
+            <div class="checkbox-container">
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">AEROFOLIO</span>
+                  <span class="checkbox-valor">100.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / D</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / T</span>
+                  <span class="checkbox-valor">45.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">SAIAS</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">RETROVISOR</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">TETO</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">GRELHA</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">BUZINA</span>
+                  <span class="checkbox-valor">10.000</span>
+              </div>
+              </div>
+            <div class="conteudo">Sub-total:</div>
+        </div>
+      </div>
+
+      <div class="quadrado quadrado3">
+            <div class="quadrado quadrado3">
+            <div class="titulo">Acessórios Externos</div>
+            <div class="checkbox-container">
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">AEROFOLIO</span>
+                  <span class="checkbox-valor">100.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / D</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / T</span>
+                  <span class="checkbox-valor">45.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">SAIAS</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">RETROVISOR</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">TETO</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">GRELHA</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">BUZINA</span>
+                  <span class="checkbox-valor">10.000</span>
+              </div>
+              </div>
+            <div class="conteudo">Sub-total:</div>
+        </div>
+      </div>
+
+      <div class="quadrado quadrado4">
+        <div class="quadrado quadrado4">
+            <div class="titulo">Acessórios Externos</div>
+            <div class="checkbox-container">
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">AEROFOLIO</span>
+                  <span class="checkbox-valor">100.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / D</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / T</span>
+                  <span class="checkbox-valor">45.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">SAIAS</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">RETROVISOR</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">TETO</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">GRELHA</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">BUZINA</span>
+                  <span class="checkbox-valor">10.000</span>
+              </div>
+              </div>
+            <div class="conteudo">Sub-total:</div>
+        </div>
+     
+      </div>
+
+      <div class="quadrado quadrado5">
+        <div class="quadrado quadrado5">
+            <div class="titulo">Acessórios Externos</div>
+            <div class="checkbox-container">
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">AEROFOLIO</span>
+                  <span class="checkbox-valor">100.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / D</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / T</span>
+                  <span class="checkbox-valor">45.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">SAIAS</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">RETROVISOR</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">TETO</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">GRELHA</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">BUZINA</span>
+                  <span class="checkbox-valor">10.000</span>
+              </div>
+              </div>
+            <div class="conteudo">Sub-total:</div>
+        </div>
+      </div>
+    
+
+      <div class="quadrado quadrado6">
+        <div class="quadrado quadrado6">
+            <div class="titulo">Acessórios Externos</div>
+            <div class="checkbox-container">
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">AEROFOLIO</span>
+                  <span class="checkbox-valor">100.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / D</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / T</span>
+                  <span class="checkbox-valor">45.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">SAIAS</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">RETROVISOR</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">TETO</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">GRELHA</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">BUZINA</span>
+                  <span class="checkbox-valor">10.000</span>
+              </div>
+              </div>
+            <div class="conteudo">Sub-total:</div>
+        </div>
+      </div>
+
+
+      <div class="quadrado quadrado7">
+        <div class="quadrado quadrado7">
+            <div class="titulo">Acessórios Externos</div>
+            <div class="checkbox-container">
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">AEROFOLIO</span>
+                  <span class="checkbox-valor">100.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / D</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">PARACHOQUE / T</span>
+                  <span class="checkbox-valor">45.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">SAIAS</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">RETROVISOR</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">TETO</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">GRELHA</span>
+                  <span class="checkbox-valor">40.000</span>
+              </div>
+              <div class="label">
+                  <input type="checkbox"> 
+                  <span class="checkbox-titulo">BUZINA</span>
+                  <span class="checkbox-valor">10.000</span>
+              </div>
+              </div>
+            <div class="conteudo">Sub-total:</div>
+        </div>
+          <div class="conteudo">
+              
+          </div>
+      </div>
+
+      
+      <div class="quadrado quadrado8">
+        <div class="quadrado quadrado8">
+           
+        </div>
+
+        <button style="margin-top:20px; width: 100%; border: none; height: 35px; background-color: purple; border-radius: 20px; color: white; font-weight: bold; cursor: pointer;">Limpar</button>
+      </div>
+
+  </div>
+  
+ 
+</div>

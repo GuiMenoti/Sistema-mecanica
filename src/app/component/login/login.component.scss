@@ -1,0 +1,138 @@
+.img-login {
+    width: 50vw;
+    height: 100vh;
+    border-radius: 0px 30px 30px 0px;
+
+}
+
+.container-principal {
+    background: linear-gradient(#272727, #2E043D);
+    width: 100vw;
+    height: 100vh;
+
+
+
+    margin: 0;
+
+
+}
+
+.container {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+
+
+.coluna1 {
+    width: 50vw;
+    height: 100vh;
+
+
+
+}
+
+
+.coluna2 {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+
+.apresentacao__experiencia__subtitulo {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.inputs1,
+.inputs2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.inputs1 label,
+.inputs2 label {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+.inputs1 input,
+.inputs2 input {
+    height: 44px;
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.forgot-password {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.senha-recupera:hover {
+color: #9552ad;
+}
+
+.senha-recupera {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    text-align: left;
+    width: 80%;
+    max-width: 400px;
+}
+
+.forgot-password:hover {
+    color: #ccc;
+}
+
+.btn-login {
+    padding-top: 70px;
+
+    .btn {
+        width: 272px;
+        height: 40px;
+        border-radius: 25px;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(158, 15, 158);
+    }
+
+    .btn:hover {
+        background-color: #2E043D;
+    }
+}
