@@ -1,4 +1,4 @@
-# Sistema de calculo de serviços para mecãnica (EM DESENVOLVIMENTO)
+# Sistema de calculo de serviços para mecânica (EM DESENVOLVIMENTO)
 
  O projeto é um sistema inovador desenvolvido para auxiliar mecânicos no cálculo preciso e eficiente de seus serviços. Este sistema foi projetado para atender tanto o proprietário da oficina quanto seus funcionários, garantindo uma operação mais organizada e produtiva.
 
