@@ -6,7 +6,7 @@
 }
 
 .container-principal {
-    background: linear-gradient(#272727, #2E043D);
+    background: linear-gradient(#ffffff, #e6e6e6);
     width: 100vw;
     height: 100vh;
 
@@ -77,7 +77,7 @@
     width: 80%;
     max-width: 400px;
     text-align: left;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     margin: 0;
 }
@@ -96,20 +96,20 @@
 .forgot-password {
     font-size: 12px;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     width: 80%;
     max-width: 400px;
     text-align: left;
 }
 
 .senha-recupera:hover {
-color: #9552ad;
+color: #dbb300;
 }
 
 .senha-recupera {
     font-size: 12px;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     display: flex;
     text-align: left;
     width: 80%;
@@ -117,7 +117,7 @@ color: #9552ad;
 }
 
 .forgot-password:hover {
-    color: #ccc;
+    color: #202020;
 }
 
 .btn-login {
@@ -127,12 +127,12 @@ color: #9552ad;
         width: 272px;
         height: 40px;
         border-radius: 25px;
-        color: white;
+        color: rgb(255, 255, 255);
         font-weight: bold;
-        background-color: rgb(158, 15, 158);
+        background-color:#dbb300;
     }
 
     .btn:hover {
-        background-color: #2E043D;
+        background-color: #a38500;
     }
 }

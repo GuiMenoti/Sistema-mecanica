@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { VarifyEmailComponent } from './component/varify-email/varify-email.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AdminRequestComponentsComponent } from './component/admin-request-components/admin-request-components.component';
+import { CalculadoraComponent } from './component/calculadora/calculadora.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     DashboardComponent,
     ForgotPasswordComponent,
-    VarifyEmailComponent
+    VarifyEmailComponent,
+    AdminRequestComponentsComponent,
+    CalculadoraComponent
   ],
   imports: [
     BrowserModule,

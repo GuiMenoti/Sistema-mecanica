@@ -38,8 +38,9 @@
 <div class="container-principal">
     <div class="container">
         <div class="coluna2">
-            <div>
-                <img src="../../../assets/logo-fluxo.png" alt="">
+            <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <img src="../../../assets/Design sem nome (7).png" alt="">
+                <p>Envie a solicitação para ingressar em nossa corporação!</p>
             </div>
             <div class="apresentacao__experiencia__subtitulo">
                
@@ -47,7 +48,7 @@
                 <div class="inputs">
                     <div class="inputs1">
                         <label>Nome</label>
-                        <input  type="text" name="name">
+                        <input  type="text" name="name" [(ngModel)]="name">
                     </div>
                     <div class="inputs1">
                         <label>E-mail</label>
@@ -62,9 +63,9 @@
          
 
             <div class="btn-login">
-                <button type="button" (click)="register()" class="btn">Registrar</button>
+                <button type="button" (click)="register()" class="btn-register">Registrar</button>
                 <div style="padding-top: 10px;" class="text-conta">
-                <a href="/login" style="text-decoration: none; color: black;">Já tem uma conta?<span style="color: purple;">Login</span></a>
+                <a href="/login" style="text-decoration: none; color: black;">Já tem uma conta?<span style="color: rgb(255, 208, 0);">Login</span></a>
             </div>
             </div>
            

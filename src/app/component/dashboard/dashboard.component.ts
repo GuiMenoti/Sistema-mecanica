@@ -18,10 +18,14 @@ export class DashboardComponent {
       this.auth.logout();
     
 }
+
+
+
 ngOnInit() {
   this.auth.getUsers().subscribe(users => {
     this.users = users;
   });
+  
 }
 
 deleteUser(userId: string) {

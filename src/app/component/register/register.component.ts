@@ -9,6 +9,7 @@ import { AuthService } from '../../shared/auth.service';
 export class RegisterComponent {
   email : string = "";
   password: string = "";
+  name: string = "";
 
 
   constructor(private auth : AuthService) {
@@ -26,7 +27,7 @@ export class RegisterComponent {
       return;
     }
   
-    this.auth.register(this.email, this.password);
+    this.auth.register(this.email, this.password, this.name);
     this.email = "";
     this.password = "";
   }

@@ -1,0 +1,66 @@
+div class="calculadora-container">
+  <h2>Calculadora de Prisão</h2>
+
+  <!-- Formulário de Informações Oficiais -->
+  <div class="form-group">
+    <label for="numeroOficial">Número Oficial:</label>
+    <input type="text" id="numeroOficial" [(ngModel)]="relatorio.numeroOficial" placeholder="Número Oficial" />
+  </div>
+  <div class="form-group">
+    <label for="nomeOficial">Nome Oficial:</label>
+    <input type="text" id="nomeOficial" [(ngModel)]="relatorio.nomeOficial" placeholder="Nome Oficial" />
+  </div>
+  <div class="form-group">
+    <label for="numeroPassaporte">Número do Passaporte:</label>
+    <input type="text" id="numeroPassaporte" [(ngModel)]="relatorio.numeroPassaporte" placeholder="Número do Passaporte" />
+  </div>
+
+  <!-- Seção de Crimes -->
+  <div class="form-group">
+    <label for="crimeSelect">Selecione o Crime:</label>
+    <select id="crimeSelect" [(ngModel)]="crimeNumero">
+      <option value="Selecione o número do Art.">Selecione o número do Art.</option>
+      <option value="Art.11">Art. 11</option>
+      <option value="Art.12">Art. 12</option>
+      <option value="Art.13">Art. 13</option>
+      <option value="Art.14">Art. 14</option>
+      <!-- Adicionar mais opções de crimes conforme necessário -->
+    </select>
+    <button (click)="adicionarCrime(crimeNumero)">Adicionar Crime</button>
+  </div>
+
+  <!-- Seção de Participantes -->
+  <div class="form-group">
+    <label for="participanteSelect">Selecione o Participante:</label>
+    <select id="participanteSelect" [(ngModel)]="participante">
+      <option value="Selecione um participante">Selecione um participante</option>
+      <option value="1">Oficial 1</option>
+      <option value="2">Oficial 2</option>
+      <option value="3">Oficial 3</option>
+      <!-- Adicionar mais opções de participantes conforme necessário -->
+    </select>
+    <button (click)="adicionarParticipante(participante)">Adicionar Participante</button>
+    <button (click)="limparParticipantes()">Limpar Participantes</button>
+  </div>
+
+  <!-- Imagem -->
+  <!-- <div class="form-group">
+    <label for="imagemInput">Colar Imagem:</label>
+    <input type="file" id="imagemInput" (change)="imagemColada = $event.target.files[0]" />
+    <button (click)="limparImagem()">Limpar Imagem</button>
+  </div> -->
+
+  <!-- Relatório -->
+  <div class="relatorio-container">
+    <h3>Relatório Gerado</h3>
+    <p><strong>Número Oficial:</strong> {{ relatorio.numeroOficial }}</p>
+    <p><strong>Nome Oficial:</strong> {{ relatorio.nomeOficial }}</p>
+    <p><strong>Número Passaporte:</strong> {{ relatorio.numeroPassaporte }}</p>
+    <p><strong>Total de Meses de Prisão:</strong> {{ relatorio.totalMesesPrisao }} meses</p>
+    <p><strong>Crimes:</strong> {{ relatorio.crimes.join(', ') }}</p>
+    <p><strong>Data e Hora:</strong> {{ relatorio.dataHora }}</p>
+    <p><strong>Participantes:</strong> {{ relatorio.participantes.join(', ') }}</p>
+  </div>
+
+  <!-- Enviar para Discord -->
+  <button (click)="enviarRelatorioParaDiscord()">Enviar Relatório para o Discord</button>
